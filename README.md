@@ -14,7 +14,7 @@ call neural_init_network(testNet, (/ 2, 3, 3, 1 /))
 call neural_train_network_file(testNet, "xor.dat", 10000)
 
 ! call neural_save_network(testNet, "network.dat")
-! call neural_load_network(testNet, "network.dat")
+! call neural_train_network_file(testNet, "xor.dat", 10000)
 
 print *, "1 and 1 = ", neural_use_network(testNet, (/ 1.0, 1.0 /))
 print *, "0 and 1 = ", neural_use_network(testNet, (/ 0.0, 1.0 /))
